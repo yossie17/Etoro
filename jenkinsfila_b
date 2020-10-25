@@ -8,6 +8,11 @@ pipeline {
             }
         }
        
-        
+        stage('Start job2') { 
+            steps { 
+              build job: 'Etoro3', parameters: [[$class: 'StringParameterValue', name: 'JOB_NAME', value: env.JOB_NAME]]
+
+            }
+        }
     }
 }
