@@ -5,16 +5,17 @@ pipeline {
     stages {
         stage('Build number of the first job') { 
             steps { 
-                script{
-                    // def jobname = "Etoro"
-                    // def jobname = env.FIRST_JOB_NAME
-                    // def job = Jenkins.instance.getItemByFullName(jobname)
-                    // def build = job.getLastBuild()
-                    // print(build)
-                    echo "The env ${FIRST_JOB_NAME}"
+                // script{
+                //     // def jobname = "Etoro"
+                //     // def jobname = env.FIRST_JOB_NAME
+                //     // def job = Jenkins.instance.getItemByFullName(jobname)
+                //     // def build = job.getLastBuild()
+                //     // print(build)
+                //     echo "The env ${FIRST_JOB_NAME}"
 
-                }
-                
+                // }
+
+                 echo "The env ${FIRST_JOB_NAME}"
              
             }
         }
