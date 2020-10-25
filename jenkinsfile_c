@@ -11,7 +11,7 @@ pipeline {
                     // def job = Jenkins.instance.getItemByFullName(jobname)
                     // def build = job.getLastBuild()
                     // print(build)
-                    echo ${FIRST_JOB_NAME}
+                    echo "The env ${FIRST_JOB_NAME}"
 
                 }
                 
