@@ -14,7 +14,7 @@ pipeline {
 
         stage('Start job2') { 
             steps { 
-              build job: 'Etoro2', parameters: [[$class: 'StringParameterValue', name: 'FIRST_JOB_NAME', value: Etoro]]
+              build job: 'Etoro2', parameters: [[$class: 'StringParameterValue', name: 'FIRST_JOB_NAME', value: env.FIRST_JOB_NAME]]
 
             }
         }
