@@ -2,9 +2,9 @@ pipeline {
     agent any 
     
     stages {
-        stage('Job Name Script') { 
+        stage('Pull from SCM') { 
             steps { 
-                sh 'python3 job_name.py' 
+                sh 'echo Pull from SCM'
             }
         }
        
