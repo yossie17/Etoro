@@ -14,7 +14,8 @@ pipeline {
             steps {
                 script {
                      {
-                        build job: 'Etoro2'
+                        build job: 'Etoro2', parameters: [[$class: 'BooleanParameterValue', name: 'BUILD_CLUSTER_2', value: "false"]]
+                    }
                 }
             }
         }
