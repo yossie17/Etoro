@@ -7,13 +7,11 @@ pipeline {
                 sh 'echo Pull from SCM'
             }
         }
-        
-    }
 
 
-        stage('Pull from SCM') { 
+        stage('test') { 
             steps { 
-                sh 'echo Test1'
+                sh 'echo Pull from SCM'
             }
         }
         
