@@ -5,6 +5,8 @@ pipeline {
         stage('Job Name Script') { 
             steps { 
                 sh 'python3 ../Etoro/job_name.py || true'
+                sh "printenv"             
+
             }
         }
        
