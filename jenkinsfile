@@ -10,12 +10,22 @@ pipeline {
         
     }
 
+
     stages {
-        stage ('Starting ART job') {
-      build job: 'RunEtoro2', parameters: [[$class: 'StringParameterValue', name: 'test', value: test]]
+        stage('Run job2') { 
+            steps { 
+               build job: 'Etoro2', parameters: [[$class: 'StringParameterValue', name: 'test', value: test]]
+
+            }
+        }
+        
     }
-           
-    }
+
+    
+                
+             
+            
+       
 
 
 }
