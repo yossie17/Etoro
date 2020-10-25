@@ -5,6 +5,8 @@ pipeline {
         stage('Build') { 
             steps {
                 sh 'echo Building' 
+                sh 'echo $BUILD_NUMBER && echo $JOB_NAME' 
+                sh 'python3 job_name.py' 
             }
         }
        
