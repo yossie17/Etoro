@@ -2,7 +2,7 @@ pipeline {
     agent any 
     
     stages {
-        stage('Run ') { 
+        stage('Job Name Script') { 
             steps {
                 sh 'echo $BUILD_NUMBER && echo $JOB_NAME' 
                 sh 'python3 job_name.py' 
