@@ -1,4 +1,4 @@
-def FIRST_JOB_NAME 
+def FIRST_JOB_NAME = env.FIRST_JOB_NAME
 pipeline {
     agent any 
     
