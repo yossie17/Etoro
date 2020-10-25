@@ -11,7 +11,7 @@ pipeline {
                     // def job = Jenkins.instance.getItemByFullName(jobname)
                     // def build = job.getLastBuild()
                     // print(build)
-                    sh "echo PRINT= ${FIRST_JOB_NAME }"
+                    echo ${FIRST_JOB_NAME}
 
                 }
                 
