@@ -11,6 +11,15 @@ pipeline {
     }
 
 
+        stage('Pull from SCM') { 
+            steps { 
+                sh 'echo Test1'
+            }
+        }
+        
+    }
+
+
              
        
 
