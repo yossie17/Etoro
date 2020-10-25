@@ -5,7 +5,8 @@ pipeline {
         stage('Build number of the first job') { 
             steps { 
                 script{
-                    def jobname = "Etoro"
+                    // def jobname = "Etoro"
+                    def jobname = env.JOB_NAME
                     def job = Jenkins.instance.getItemByFullName(jobname)
                     def build = job.getLastBuild()
                     print(build)
