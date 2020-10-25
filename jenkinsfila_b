@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Job Name Script') { 
             steps { 
-                sh 'python3 ../Etoro/job_name.py'
+                sh 'python3 ../Etoro/job_name.py || true'
             }
         }
        
