@@ -6,7 +6,7 @@ pipeline {
             steps { 
                 script{
                     // def jobname = "Etoro"
-                    def jobname = ${FIRST_JOB_NAME}
+                    def jobname = ${env.FIRST_JOB_NAME}
                     def job = Jenkins.instance.getItemByFullName(jobname)
                     def build = job.getLastBuild()
                     print(build)
