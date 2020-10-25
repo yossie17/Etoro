@@ -1,4 +1,5 @@
 import os
+import sys
 
 
 def isMultipleof3(n): 
@@ -11,9 +12,11 @@ def isMultipleof3(n):
 
 	return 0
 	
-i = int(os.environ['NUM'])
+i = int(os.environ['BUILD_NUMBER'])
 if ( isMultipleof3(i) == 1 ): 
-	print (i, "is multiple of 3" + ' ' + os.environ['JOB']) and exit(0)
+	print (i, "is multiple of 3" + ' ' + os.environ['JOB_NAME']) 
 	
 else: 
-	print (i, "is not a multiple of 3") and exit(1)
+	print (i, "is not a multiple of 3") 
+	sys.exit(1)
+
