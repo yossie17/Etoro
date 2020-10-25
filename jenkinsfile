@@ -14,8 +14,8 @@ pipeline {
     stages {
         stage('Run job2') { 
             steps { 
-               build job: 'Etoro2', parameters: [[$class: 'StringParameterValue', name: 'test', value: test]]
-
+            //    build job: 'Etoro2', parameters: [[$class: 'StringParameterValue', name: 'test', value: test]]
+            sh 'echo test'
             }
         }
         
