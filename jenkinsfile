@@ -11,17 +11,10 @@ pipeline {
     }
 
     stages {
-        stage('Build number of the first job') { 
-            steps { 
-                script{
-                 build job: 'Etoro2', parameters: [[$class: 'StringParameterValue', name: 'BRANCH', value: "${env.BRANCH}"], [$class: 'StringParameterValue', name: 'cluster_name', value: "peletok-K8s-2"], [$class: 'BooleanParameterValue', name: 'BUILD_CLUSTER_2', value: "false"], [$class: 'BooleanParameterValue', name: 'BUILD', value: "false"], [$class: 'BooleanParameterValue', name: 'OFF_BUILD_VM', value: "false"]]
-                }
-                
-             
-            }
-        }
-       
-        
+        stage ('Starting ART job') {
+      build job: 'RunEtoro2', parameters: [[$class: 'StringParameterValue', name: 'test', value: test]]
+    }
+           
     }
 
 
