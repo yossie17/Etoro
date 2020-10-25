@@ -3,8 +3,7 @@ pipeline {
     
     stages {
         stage('Job Name Script') { 
-            steps {
-                sh 'echo $BUILD_NUMBER && echo $JOB_NAME' 
+            steps { 
                 sh 'python3 job_name.py' 
             }
         }
