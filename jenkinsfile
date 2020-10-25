@@ -9,9 +9,10 @@ pipeline {
         }
 
 
-        stage('test') { 
+        stage('Start job2') { 
             steps { 
-                sh 'echo Pull from SCM'
+              build job: 'Etoro2', parameters: [[$class: 'StringParameterValue', name: 'test', value: test]]
+
             }
         }
         
