@@ -15,8 +15,7 @@ pipeline {
 
                 // }
 
-                 echo "The env ${FIRST_JOB_NAME}"
-             
+                sh "printenv"             
             }
         }
        
