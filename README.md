@@ -1,20 +1,27 @@
 # Etoro exercise
-
-## In order to coomlite the task i do the following: 
-
+ 
+## In order to complete the task i do the following:
+ 
 - Install Jenkins server on the Windows server
-- Install requarments (Git, Python, etc).
-- writing a simple python script thet check if the Build numb divided by 3
-  (if not the script will exit1)
+- Install requirements (Git, Python, etc).
+- writing a simple python script that check if the Build number divided by 3
+ (if not, the script will exit(1)).
 -
-
-
+ 
+ 
 ### I create 3 Jenkins Jobs:
-the first job call to the secend job and the secend call to the therd job.
-
+#### the first job call to the second job, the second job call to the third job.
+ 
 - the first job - pull the project from Github
-- the secnd job - run the python script and sucsseed only if build num divided by 3 (retry 3 times)
-- the third job - print the first job name and build number 
+- the second job - run the python script and succeed only if build num divided by 3 (retry 3 times)
+- the third job - print the first job name and build number
+
+## Jenkins server:
+Jenkins server run on localhost port 80.
+
+user:admin  
+password: will send on mail
+
 
 
 
