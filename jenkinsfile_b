@@ -7,10 +7,9 @@ pipeline {
     stages {
         stage('Job Name Script') { 
             steps { 
+                retry(3){
                 bat 'python ..//Etoro//job_name.py'
-                retry(3)
-                echo env.FIRST_JOB_NAME
-
+                }
             }
         }
        
