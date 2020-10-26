@@ -8,7 +8,7 @@ pipeline {
         stage('Job Name Script') { 
             steps { 
                 retry(3){
-                bat 'python ..//Etoro//job_name.py'
+                bat 'python ..//Etoro//job_name.py || true'
                 }
             }
         }
