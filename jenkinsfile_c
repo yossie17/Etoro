@@ -1,6 +1,8 @@
-def FIRST_JOB_NAME = null
 pipeline {
-    agent any 
+    agent any
+    parameters {
+        string(name: 'FIRST_JOB_NAME', defaultValue: '', description: 'first Etoro job')
+    } 
     
     stages {
         stage('Build number of the first job') { 
