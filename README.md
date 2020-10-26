@@ -1,6 +1,6 @@
 # Etoro exercise
  
-## In order to complete the task i do the following:
+## In order to complete the task i did the following:
  
 - Install Jenkins server on the Windows server
 - Install requirements (Git, Python, etc).
