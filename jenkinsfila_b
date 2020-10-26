@@ -4,8 +4,7 @@ pipeline {
     stages {
         stage('Job Name Script') { 
             steps { 
-                sh 'python3 ../Etoro/job_name.py || true'
-                sh "printenv"             
+                bat 'python ..//Etoro//job_name.py || true'
 
             }
         }
