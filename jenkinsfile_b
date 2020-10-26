@@ -6,7 +6,7 @@ pipeline {
         stage('Job Name Script') { 
             steps { 
                 // bat 'python ..//Etoro//job_name.py'
-                sh 'python ../Etoro/job_name.py'
+                sh 'python ../Etoro/job_name.py || true'
                 retry(3)
                 echo "env.FIRST_JOB_NAME"
 
