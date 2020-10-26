@@ -6,10 +6,10 @@
 - Install requirements (Git, Python, etc).
 - writing a simple python script that check if the Build number divided by 3
  (if not, the script will exit(1)).
--
+
  
  
-### I create 3 Jenkins Jobs:
+### I created 3 Jenkins Jobs:
 #### the first job call to the second job, the second job call to the third job.
  
 - the first job - pull the project from Github
