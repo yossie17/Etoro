@@ -1,4 +1,4 @@
-def FIRST_JOB_NAME = env.FIRST_JOB_NAME
+def FIRST_JOB_NAME = null
 pipeline {
     agent any 
     
@@ -10,6 +10,7 @@ pipeline {
                     def job = Jenkins.instance.getItemByFullName(jobname)
                     def build = job.getLastBuild()
                     print(build)
+                    
 
                 }
 
