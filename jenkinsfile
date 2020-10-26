@@ -7,7 +7,7 @@ pipeline {
     stages {
         stage('Pull from SCM') { 
             steps { 
-                bat 'echo Pull from SCM'
+                sh 'echo Pull from SCM'
             }
         }
 
